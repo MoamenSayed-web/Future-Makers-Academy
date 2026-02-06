@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0f0f1e" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../Front End Files/Public/CSS/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>Future Makers Academy - Learn & Grow</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <a href="#home" class="logo-link">
+                    <img
+                        src="./Images/logo/Blue Modern Computer Technology Logo.jpg"
+                        alt="Future Makers Academy Logo"
+                        class="logo" />
+                </a>
+
+                <button class="menu-toggle" aria-expanded="false"
+                    aria-label="Toggle menu">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="links" id="mainNav">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services"
+                                class="nav-link">Services</a></li>
+                        <li><a href="#stats" class="nav-link">Stats</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header-buttons">
+                    <a href="register.html" class="btn btn-primary"><span
+                            class="btn-text">Sign Up</span></a>
+                    <a href="login.html" class="btn btn-outline-primary"><span
+                            class="btn-text">Log In</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="hero section-divider">
+            <div class>
+                <div class="hero-content">
+                    <h1>Welcome to <span>Future Makers Academy</span></h1>
+                    <p>
+                        Your journey to a brighter future starts here. Join us
+                        to unlock your potential and achieve your dreams.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="register.html"
+                            class="btn btn-primary btn-lg"><span
+                                class="btn-text">Get Started</span></a>
+                        <a href="#learning-path"
+                            class="btn btn-outline-primary btn-lg"><span
+                                class="btn-text">See Courses</span></a>
+                        <button class="btn btn-play btn-lg"
+                            aria-label="Watch demo"><span class="play-icon"
+                                aria-hidden="true">►</span><span
+                                class="btn-text">Watch Demo</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <div id="services" class="landing section-divider">
+            <div class="landing-head">
+                <h3>Services</h3>
+                <p>Our academy offers a wide range of services to help you grow
+                    and succeed.</p>
+            </div>
+            <div class="landing-content">
+                <div class="tracks-grid">
+                    <div class="track-card">
+                        <div class="track-media">
+                            <img
+                                src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png"
+                                alt="Web Development" />
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>Learn HTML, CSS, JavaScript and modern frameworks to
+                            build responsive, production-ready websites and web
+                            apps.</p>
+                        <div class="track-meta"><span class="badge">6
+                                months</span><span class="badge">Beginner →
+                                Intermediate</span></div>
+                        <div class="track-actions"> <div
+                                class="track-actions"><a class="btn btn-primary"
+                                    href="cybersecurity.html"><span
+                                        class="btn-text">Learn
+                                        More</span></a></div></div>
+                    </div>
+
+                    <div class="track-card">
+                        <div class="track-media">
+                            <img
+                                src="data:image/jpeg;base64,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"
+                                alt="Data Science" />
+                        </div>
+                        <h4>Data Science</h4>
+                        <p>Master Python, data analysis, and machine learning
+                            fundamentals to make data-driven decisions and build
+                            models.</p>
+                        <div class="track-meta"><span class="badge">6
+                                months</span><span
+                                class="badge">Intermediate</span></div>
+                        <div class="track-actions"> <div
+                                class="track-actions"><a class="btn btn-primary"
+                                    href="cybersecurity.html"><span
+                                        class="btn-text">Learn
+                                        More</span></a></div></div>
+                    </div>
+
+                    <div class="track-card">
+                        <div class="track-media">
+                            <img
+                                src="https://cdn.shopaccino.com/igmguru/products/flutter-igmguru_1527424732_xl.jpg?v=546"
+                                alt="Mobile Development" />
+                        </div>
+                        <h4>Mobile Development</h4>
+                        <p>Build cross-platform mobile apps using modern tools
+                            and frameworks for Android and iOS.</p>
+                        <div class="track-meta"><span class="badge">4
+                                months</span><span class="badge">Beginner →
+                                Intermediate</span></div>
+                        <div class="track-actions"> <div
+                                class="track-actions"><a class="btn btn-primary"
+                                    href="cybersecurity.html"><span
+                                        class="btn-text">Learn
+                                        More</span></a></div></div>
+                    </div>
+
+                    <div class="track-card">
+                        <div class="track-media">
+                            <img
+                                src="https://media.licdn.com/dms/image/v2/C4D12AQEpT9a_XdqA7g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1585033916081?e=2147483647&v=beta&t=UknV2ZoIBIMdHUgZS5uGdcBaP3o7w1ADybIoAqjTl3o"
+                                alt="AI & ML" />
+                        </div>
+                        <h4>AI & Machine Learning</h4>
+                        <p>Get hands-on with neural networks, deep learning
+                            libraries and ethical AI practices to build
+                            intelligent systems.</p>
+                        <div class="track-meta"><span class="badge">8
+                                months</span><span class="badge">Intermediate →
+                                Advanced</span></div>
+                        <div class="track-actions"><a
+                                class="btn btn-primary view-track"
+                                href="ai-ml.html"><span class="btn-text">View
+                                    Track</span></a></div>
+                    </div>
+
+                    <div class="track-card">
+                        <div class="track-media">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCGLR-H-MtE_r-pP8G0Vz8G_BM7GOwsiO6Q&s"
+                                alt="Cyber Security" />
+                        </div>
+                        <h4>Cyber Security</h4>
+                        <p>Learn the fundamentals of security, threat analysis,
+                            and best practices to protect systems and data.</p>
+                        <div class="track-meta"><span class="badge">5
+                                months</span><span
+                                class="badge">Intermediate</span></div>
+                        <div class="track-actions"><a class="btn btn-primary"
+                                href="cybersecurity.html"><span
+                                    class="btn-text">Learn More</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-media">
+                    <img
+                        src="./Images/logo/Blue Modern Computer Technology Logo.jpg"
+                        alt="About Future Makers Academy" />
+                </div>
+                <div class="about-content">
+                    <h3>About <span>Future Makers Academy</span></h3>
+                    <p>We help learners turn ambition into achievement with
+                        practical, project-based training and personalised
+                        career support. Our programs are built by industry
+                        experts and designed to give you the skills employers
+                        are looking for.</p>
+
+                    <ul class="about-features">
+                        <li><strong>Expert Mentors</strong><span>Guidance and
+                                code reviews from experienced
+                                professionals.</span></li>
+                        <li><strong>Hands-on Projects</strong><span>Real
+                                projects to build your portfolio and showcase
+                                your skills.</span></li>
+                        <li><strong>Career Support</strong><span>Mock
+                                interviews, CV reviews and job placement
+                                help.</span></li>
+                    </ul>
+
+                    <div class="about-actions">
+                        <a href="register.html" class="btn btn-primary">Join
+                            Now</a>
+                        <a href="contact.html"
+                            class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 1: WHY CHOOSE US ============ -->
+        <section id="why-choose" class="why-choose-section section-divider">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose <span>Future Makers Academy</span>?</h2>
+                    <p>Learn from the best, grow faster, and achieve your
+                        dreams</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <h4>Industry-Relevant</h4>
+                        <p>Curriculum designed by industry experts to match
+                            real-world demands</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👥</div>
+                        <h4>Personal Mentorship</h4>
+                        <p>One-on-one guidance from experienced professionals in
+                            your field</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💼</div>
+                        <h4>Career Support</h4>
+                        <p>Job placement assistance, interview prep, and career
+                            counseling</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Project-Based Learning</h4>
+                        <p>Build real projects for your portfolio that impress
+                            employers</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⏱️</div>
+                        <h4>Flexible Schedule</h4>
+                        <p>Learn at your own pace with lifetime access to course
+                            materials</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🏆</div>
+                        <h4>Certification</h4>
+                        <p>Industry-recognized certificates that boost your
+                            career prospects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 2: STATISTICS ============ -->
+        <section id="stats" class="stats-section section-divider">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">15K+</div>
+                        <div class="stat-label">Active Students</div>
+                        <p>Learning and growing every day</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">92%</div>
+                        <div class="stat-label">Job Placement Rate</div>
+                        <p>Within 6 months of graduation</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Instructors</div>
+                        <p>Industry professionals teaching</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8/10</div>
+                        <div class="stat-label">Average Rating</div>
+                        <p>From 2000+ reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 3: TESTIMONIALS ============ -->
+        <section id="testimonials" class="testimonials-section section-divider">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our <span>Students Say</span></h2>
+                    <p>Real stories from real learners who transformed their
+                        careers</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"This academy completely transformed my career. The mentorship and hands-on projects helped me land my dream job within 3 months!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MS</div>
+                            <div>
+                                <strong>Moamen Sayed</strong>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The curriculum is up-to-date and the instructors are incredibly supportive. I went from zero to having a complete portfolio!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div>
+                                <strong>Sarah Mahmoud</strong>
+                                <span>Data Scientist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best investment I've made! The flexible schedule allowed me to learn while working, and the career support sealed the deal."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MS</div>
+                            <div>
+                                <strong>Mohammed Sayed</strong>
+                                <span>Mobile Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 4: FAQ ============ -->
+        <section id="faq" class="faq-section section-divider">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked <span>Questions</span></h2>
+                    <p>Get answers to common questions about our programs</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>Do I need prior programming experience?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">No! Our beginner tracks start
+                            from the basics. We welcome anyone eager to learn,
+                            regardless of background.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>What is the course duration?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">Most courses range from 4-8
+                            months depending on the track. You can learn at your
+                            own pace with lifetime access.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>Will I get a certificate?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">Yes! Upon completion, you'll
+                            receive an industry-recognized certificate that's
+                            respected by employers worldwide.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>Is there a job guarantee?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">We offer comprehensive job
+                            placement support with mock interviews, CV reviews,
+                            and connections to hiring partners.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>Can I study part-time?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">Absolutely! Our flexible
+                            schedule allows you to study whenever suits you best
+                            - mornings, evenings, or weekends.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>What about refunds?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-content">We offer a 14-day money-back
+                            guarantee if you're not satisfied with the course
+                            content.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 5: LEARNING PATH ============ -->
+        <section id="learning-path"
+            class="learning-path-section section-divider">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Learning <span>Journey</span></h2>
+                    <p>Follow these simple steps to start your
+                        transformation</p>
+                </div>
+                <div class="path-timeline">
+                    <div class="path-step">
+                        <div class="step-number">1</div>
+                        <h4>Sign Up</h4>
+                        <p>Create your free account in seconds</p>
+                    </div>
+                    <div class="path-divider"></div>
+                    <div class="path-step">
+                        <div class="step-number">2</div>
+                        <h4>Choose Track</h4>
+                        <p>Pick a course that excites you</p>
+                    </div>
+                    <div class="path-divider"></div>
+                    <div class="path-step">
+                        <div class="step-number">3</div>
+                        <h4>Learn & Build</h4>
+                        <p>Start with lessons and projects</p>
+                    </div>
+                    <div class="path-divider"></div>
+                    <div class="path-step">
+                        <div class="step-number">4</div>
+                        <h4>Get Support</h4>
+                        <p>Connect with mentors anytime</p>
+                    </div>
+                    <div class="path-divider"></div>
+                    <div class="path-step">
+                        <div class="step-number">5</div>
+                        <h4>Land Your Job</h4>
+                        <p>We help you secure opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 6: SPECIAL OFFER ============ -->
+        <section id="offer" class="offer-section section-divider">
+            <div class="container">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <h2>Limited Time Offer</h2>
+                        <p>Join now and get <span class="highlight">30%
+                                OFF</span> on your first course!</p>
+                        <ul class="offer-perks">
+                            <li>✓ Lifetime access to course materials</li>
+                            <li>✓ Personal mentor assigned</li>
+                            <li>✓ Career support included</li>
+                            <li>✓ 14-day money-back guarantee</li>
+                        </ul>
+                        <div class="offer-timer">
+                            <p>Offer expires in: <strong>14 Days</strong></p>
+                        </div>
+                        <a href="register.html"
+                            class="btn btn-primary btn-lg">Claim Your
+                            Discount</a>
+                    </div>
+                    <div class="offer-visual">
+                        <div class="discount-badge">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-divider">
+            <div class="container contact-container">
+                <div class="contact-grid">
+                    <form id="contactForm" class="contact-form card" novalidate>
+                        <h3>Contact <span>Us</span></h3>
+                        <p class="muted">Have questions or want to learn more?
+                            Send us a message and we'll reply within 24
+                            hours.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact_name">Full name</label>
+                                <input id="contact_name" name="name" type="text"
+                                    placeholder="Your full name" required />
+                                <div class="form-error" id="contactNameError"
+                                    aria-live="polite"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_email">Email</label>
+                                <input id="contact_email" name="email"
+                                    type="email" placeholder="your@email.com"
+                                    required />
+                                <div class="form-error" id="contactEmailError"
+                                    aria-live="polite"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_subject">Subject</label>
+                            <input id="contact_subject" name="subject"
+                                type="text" placeholder="Subject (optional)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_message">Message</label>
+                            <textarea id="contact_message" name="message"
+                                rows="6" placeholder="Tell us what you need"
+                                required></textarea>
+                            <div class="form-error" id="contactMsgError"
+                                aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button id="contactBtn" class="btn btn-primary"
+                                type="submit"><span class="spinner"
+                                    aria-hidden="true"></span><span
+                                    class="btn-text">Send
+                                    Message</span></button>
+                            <button class="btn btn-outline-primary"
+                                type="reset"><span
+                                    class="btn-text">Reset</span></button>
+                        </div>
+                    </form>
+
+                    <aside class="contact-info card">
+                        <h4>Get in touch</h4>
+                        <p>We're here to help — reach out via the form or
+                            contact us directly.</p>
+                        <ul class="contact-list">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" aria-hidden="true"><path
+                                        d="M3 8v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8"
+                                        stroke="#007BFF" stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path><path
+                                        d="M7 8l5 4 5-4" stroke="#007BFF"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path></svg><div><strong>Email</strong><a
+                                        href="mailto:info@futuremakers.ac">
+                                        info@futuremakers.ac</a></div></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" aria-hidden="true"><path
+                                        d="M22 16.92V21a1 1 0 0 1-1 1c-9.94-.01-18-8.06-18-18 0-.55.45-1 1-1h4.09a1 1 0 0 1 1 .75L9 7a1 1 0 0 1-.27.72L7.19 9.26a16 16 0 0 0 7.55 7.55l1.54-1.54a1 1 0 0 1 .72-.27l1.26.25c.44.09.75.47.75 1z"
+                                        stroke="#007BFF" stroke-width="1.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path></svg><div><strong>Phone</strong><a
+                                        href="tel:+1234567890"> +20 (012)
+                                        148-173-92</a></div></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" aria-hidden="true"><path
+                                        d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"
+                                        stroke="#007BFF" stroke-width="1.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path><circle
+                                        cx="12" cy="10" r="2"
+                                        fill="#007BFF"></circle></svg><div><strong>Address
+                                    </strong>Egypt
+                                    Asyut, Dairout</div></li>
+                            <!-- <li><svg width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" aria-hidden="true"><path
+                                        d="M3 12h18" stroke="#007BFF"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path><path
+                                        d="M6 16h12" stroke="#007BFF"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path></svg><div><strong>Hours</strong>
+                                    Mon — Fri, 9:00 — 18:00</div></li> -->
+                        </ul>
+
+                        <div class="contact-map">
+                            <img
+                                src="./Images/logo/Blue Modern Computer Technology Logo.jpg"
+                                alt="Map placeholder" />
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        (function () {
+            var headerBtns = document.querySelector('.header-buttons');
+            var current = JSON.parse(localStorage.getItem('fma_current_user') || 'null');
+
+            // Mobile menu toggle
+            var menuToggle = document.querySelector('.menu-toggle');
+            var mainNav = document.getElementById('mainNav');
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function () {
+                    var expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', String(!expanded));
+                    this.classList.toggle('active');
+                    mainNav.classList.toggle('open');
+                });
+                // close menu when a nav link is clicked (small devices)
+                mainNav.querySelectorAll('a').forEach(function (lnk) {
+                    lnk.addEventListener('click', function () {
+                        if (mainNav.classList.contains('open')) {
+                            mainNav.classList.remove('open');
+                            menuToggle.classList.remove('active');
+                            menuToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+            }
+            if (current && headerBtns) {
+                headerBtns.innerHTML = '<span style="margin-right:12px;font-weight:600;color:var(--text-secondary);">Welcome, ' + (current.name || current.email) + '</span>' +
+                    '<a href="dashboard.html" class="btn btn-outline-primary"><span class="btn-text">Dashboard</span></a>' +
+                    '<button id="logoutBtn" class="btn btn-primary"><span class="btn-text">Logout</span></button>';
+                var logout = document.getElementById('logoutBtn');
+                logout.addEventListener('click', function () {
+                    localStorage.removeItem('fma_current_user');
+                    sessionStorage.removeItem('fma_just_logged_in');
+                    location.reload();
+                });
+            }
+
+            if (sessionStorage.getItem('fma_just_logged_in')) {
+                sessionStorage.removeItem('fma_just_logged_in');
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire({ toast: true, position: 'top-end', icon: 'success', title: 'Welcome back, ' + (current ? (current.name || '') : ''), showConfirmButton: false, timer: 1600 });
+                }
+            }
+
+            // Track card interactions
+            document.querySelectorAll('.view-track').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var current = JSON.parse(localStorage.getItem('fma_current_user') || 'null');
+                    var track = this.dataset.track || 'Track';
+                    if (!current) {
+                        Swal.fire({
+                            title: 'Join to access this track',
+                            text: 'You need an account to view the full track. Sign up or login?',
+                            icon: 'info',
+                            showCancelButton: true,
+                            confirmButtonText: 'Sign Up',
+                            cancelButtonText: 'Login'
+                        }).then(function (r) {
+                            if (r.isConfirmed) location = 'register.html';
+                            else location = 'login.html';
+                        });
+                        return;
+                    }
+
+                    Swal.fire({
+                        title: track,
+                        html: '<p style="color:var(--text-secondary);">Welcome <strong style="color:var(--primary-color);">' + (current.name || '') + '</strong>! This track includes lessons, hands-on projects and a certificate on completion.</p>',
+                        icon: 'success',
+                        showCancelButton: true,
+                        confirmButtonText: 'Go to Dashboard',
+                        cancelButtonText: 'Close'
+                    }).then(function (r) { if (r.isConfirmed) location = 'dashboard.html'; });
+                });
+            });
+
+            // Contact form: validation, prefill and mock send (with inline errors)
+            var contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                var contactBtn = document.getElementById('contactBtn');
+                var nameField = document.getElementById('contact_name');
+                var emailField = document.getElementById('contact_email');
+                var subjectField = document.getElementById('contact_subject');
+                var msgField = document.getElementById('contact_message');
+                var nameError = document.getElementById('contactNameError');
+                var emailError = document.getElementById('contactEmailError');
+                var msgError = document.getElementById('contactMsgError');
+
+                var currentUser = JSON.parse(localStorage.getItem('fma_current_user') || 'null');
+                if (currentUser) {
+                    if (currentUser.name) nameField.value = currentUser.name;
+                    if (currentUser.email) emailField.value = currentUser.email;
+                }
+
+                function clearErrors() {
+                    [nameField, emailField, msgField].forEach(function (f) { f.classList.remove('invalid'); });
+                    [nameError, emailError, msgError].forEach(function (d) { if (d) d.textContent = ''; });
+                }
+
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    clearErrors();
+                    var ok = true;
+                    if (!nameField.value.trim()) { nameError.textContent = 'Please enter your name'; nameField.classList.add('invalid'); ok = false; }
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) { emailError.textContent = 'Enter a valid email'; emailField.classList.add('invalid'); ok = false; }
+                    if (msgField.value.trim().length < 10) { msgError.textContent = 'Message must be at least 10 characters'; msgField.classList.add('invalid'); ok = false; }
+                    if (!ok) { if (typeof Swal !== 'undefined') Swal.fire({ toast: true, position: 'top-end', icon: 'error', title: 'Please complete the form correctly', showConfirmButton: false, timer: 2000 }); var first = document.querySelector('.invalid'); if (first) first.focus(); return; }
+
+                    contactBtn.disabled = true; contactBtn.classList.add('loading');
+                    setTimeout(function () {
+                        contactBtn.disabled = false; contactBtn.classList.remove('loading');
+                        if (typeof Swal !== 'undefined') Swal.fire({ icon: 'success', title: 'Message sent', text: 'Thank you — we will reply within 24 hours.' });
+                        contactForm.reset();
+                        if (currentUser) {
+                            nameField.value = currentUser.name || '';
+                            emailField.value = currentUser.email || '';
+                        }
+                    }, 900);
+                });
+            }
+
+        })();
+    </script>
+    </body>
+</html>
